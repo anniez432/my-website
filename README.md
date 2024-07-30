@@ -1,4 +1,4 @@
-# My personal portfolio website.
-<h2> Features classes I've taken, projects I've created, and contact information. </h2>
+# My personal portfolio website!
+<h3> Features classes I've taken, projects I've created, and contact information. </h3>
 
-<h3>You can visit it <a href="https://anniez432.github.io/my-website/">here</a></h3>
+<h5>You can visit it <a target="_blank" href="https://anniez432.github.io/my-website/">here</a></h5>
