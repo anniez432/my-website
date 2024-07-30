@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 100;
+  z-index: 1000;
 }
 .nav-link{
   font-size: 1.2rem;
