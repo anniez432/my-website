@@ -176,12 +176,12 @@ h1{
 }
 
 #left-button{
-  background-image: url("left-arrow.png");
+  background-image: url("Images/left-arrow.png");
   left: 5vh;
 }
 
 #right-button{
-  background-image: url("right-arrow.png");
+  background-image: url("Images/right-arrow.png");
   right: 5vh;
 }
 
