@@ -201,6 +201,11 @@ h1{
   border-radius: 8px;
 }
 
+#left-button:hover, #right-button:hover{
+  width: 5.5vh;
+  height: 4.5vh;
+}
+
 
 
 @media (max-width: 700px){
