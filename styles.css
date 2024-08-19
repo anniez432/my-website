@@ -125,10 +125,11 @@ h1{
 .projects-wrapper{
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
-  width: 55%;
-  position: relative;
+  width: 60%;
+  
 }
 
 .project-card {

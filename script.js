@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let cardIndex = 0;
 
     function updateCard(){
-        const offset = -cardIndex * 100;
+        const offset = -cardIndex * 50;
         projectWrapper.style.transform = `translateX(${offset}%)`;
     }
 
