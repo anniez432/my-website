@@ -82,7 +82,7 @@ h1{
   background-color: var(--dark-background);
 }
 
-#about-section > h3, #about-section > h4{
+#about-section > h3{
   width: 60%;
   text-align: center;
   margin: 10px auto;
@@ -108,6 +108,10 @@ h1{
   width: 80%;
   height: auto;
   padding: 1rem;
+}
+
+summary{
+  font-weight: bold;
 }
 
 .projects-container {
