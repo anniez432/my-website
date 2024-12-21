@@ -59,6 +59,11 @@ h1{
   font-size: 3rem;
 }
 
+#introduction-title:hover{
+  transform: scale(1.1) translate3d(0, -5px, 0); /* Increase scale and move up slightly */
+  transition: transform 0.3s ease;
+}
+
 #welcome-section{
   height: 100vh;
   display: flex;
