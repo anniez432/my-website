@@ -59,11 +59,27 @@ h1{
   font-size: 3rem;
 }
 
-#introduction-title:hover{
-  transform: scale(1.1) translate3d(0, -5px, 0); /* Increase scale and move up slightly */
-  transition: transform 0.3s ease;
+#welcome-title::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position the line at the bottom of the text */
+  width: 0%; /* Start with no underline */
+  height: 4px; /* Height of the underline */
+  background-color: var(--dark-background); /* Color of the underline */
+  transition: width 0.5s ease; /* Animate the width over 0.5s */
 }
 
+#welcome-title:hover::before {
+  width: 100%; /* Underline expands to full width */
+}
+
+#welcome-title{
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease; 
+  cursor: pointer;
+}
 #welcome-section{
   height: 100vh;
   display: flex;
