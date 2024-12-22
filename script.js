@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isScrollingDown = currentScrollPosition > lastScrollPosition;
 
         if (isScrollingDown) {
-            welcomeTitle.style.transform = `scale(${Math.max(scale, 1.5)}) translate3d(0, -5px, 0)`;
+            welcomeTitle.style.transform = `scale(${Math.max(scale, 1.3)}) translate3d(0, -5px, 0)`;
             
         } else {
             // Reverse transformations when scrolling up
