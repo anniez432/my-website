@@ -142,8 +142,7 @@ summary{
   gap: 20px;
   padding-top: 3rem;
   width: max-content;
-  max-width: 1200px;
-  overflow: hidden;
+  overflow-x: auto;
 
 }
 
@@ -153,7 +152,7 @@ summary{
   justify-content: flex-start;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
-  width: 60%;
+  width: 65%;
   
 }
 

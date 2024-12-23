@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let cardIndex = 0;
 
     function updateCard(){
-        const cardWidth = projectCards[0].offsetWidth; 
+        const cardWidth = projectCards[0].offsetWidth + 20; 
         const offset = -cardIndex * cardWidth;
         projectWrapper.style.transform = `translateX(${offset}px)`;
+        projectWrapper.scrollLeft = offset;
     }
 
     leftButton.addEventListener("click", () => {
