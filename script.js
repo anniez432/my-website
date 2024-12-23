@@ -47,7 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const titleWidth = welcomeTitle.offsetWidth;
         if (titleWidth > window.innerWidth) {
             // If the title is too wide, scale it down to fit within the viewport
-            welcomeTitle.style.transform = `scale(${window.innerWidth / titleWidth}) translate3d(0, -5px, 0)`;
+            welcomeTitle.style.fontSize = `calc(${(window.innerWidth / titleWidth) * 100}% + 1rem)`;
+        } else {
+            // Reset to a base font-size if it's within bounds
+            welcomeTitle.style.fontSize = `calc(3vw + 1rem)`;
         }
         welcomeTitle.style.transition = `transform 0.6s ease`;
     

@@ -75,6 +75,7 @@ h1{
 }
 
 #welcome-title{
+  font-size: calc(4rem + 1rem);
   position: relative;
   display: inline-block;
   transition: transform 0.5s ease, color 0.5s ease; 
@@ -113,6 +114,11 @@ h1{
   padding-top: 3rem;
 }
 
+details {
+  width: 90%;
+  text-align: center;
+}
+
 
 #projects{
   height: 100vh;
@@ -136,6 +142,10 @@ summary{
   font-weight: bold;
 }
 
+ul {
+  text-align: left;
+  margin-left: 25%
+}
 .projects-container {
   display: flex;
   align-items: center;
