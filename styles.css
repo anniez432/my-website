@@ -79,6 +79,7 @@ h1{
   display: inline-block;
   transition: transform 0.5s ease, color 0.5s ease; 
   cursor: pointer;
+  max-width: 100vw;
 }
 #welcome-section{
   height: 100vh;
@@ -141,9 +142,8 @@ summary{
   position: relative;
   gap: 20px;
   padding-top: 3rem;
-  width: max-content;
-  overflow-x: auto;
-
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .projects-wrapper{
@@ -152,8 +152,7 @@ summary{
   justify-content: flex-start;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
-  width: 65%;
-  
+  width: 60%;
 }
 
 .project-card {

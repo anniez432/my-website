@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let cardIndex = 0;
 
     function updateCard(){
-        const cardWidth = projectCards[0].offsetWidth + 20; 
-        const offset = -cardIndex * cardWidth;
-        projectWrapper.style.transform = `translateX(${offset}px)`;
-        projectWrapper.scrollLeft = offset;
+        const cardWidth = projectCards[0].offsetWidth + 10; // Get the width of the first card
+        const offset = -cardIndex * cardWidth; // Move by the width of one card
+        projectWrapper.style.transform = `translateX(${offset}px)`; // Use px instead of %
     }
 
     leftButton.addEventListener("click", () => {
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isScrollingDown = currentScrollPosition > lastScrollPosition;
 
         if (isScrollingDown) {
-            welcomeTitle.style.transform = `scale(${Math.max(scale, 1.3)}) translate3d(0, -5px, 0)`;
+            welcomeTitle.style.transform = `scale(${Math.max(scale, 1.4)}) translate3d(0, -5px, 0)`;
             
         } else {
             // Reverse transformations when scrolling up
@@ -45,6 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
             welcomeTitle.style.transform = `scale(${Math.max(scale, 1)}) translate3d(0, 5px, 0)`;
         }
 
+        const titleWidth = welcomeTitle.offsetWidth;
+        if (titleWidth > window.innerWidth) {
+            // If the title is too wide, scale it down to fit within the viewport
+            welcomeTitle.style.transform = `scale(${window.innerWidth / titleWidth}) translate3d(0, -5px, 0)`;
+        }
         welcomeTitle.style.transition = `transform 0.6s ease`;
     
         // Update last scroll position
