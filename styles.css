@@ -141,7 +141,7 @@ summary{
   position: relative;
   gap: 20px;
   padding-top: 3rem;
-  width: 100%;
+  width: max-content;
   max-width: 1200px;
   overflow: hidden;
 
