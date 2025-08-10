@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardWidth = projectCards[0].offsetWidth + 10;
     let position = 0;
-    let speed = 0.75;
+    let speed = 0.9;
     let isPaused = false;
     let manualAction = false;
     let resumeTimeout;
@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function continuousScroll() {
         if (!isPaused && !manualAction){
             position -= speed;
+
+            const maxOffset = (projectCards.length / 2) * cardWidth;
             if(Math.abs(position) >= (projectCards.length / 2) * cardWidth){
-                position = 0;
+                position += maxOffset;
             }
             projectWrapper.style.transform = `translateX(${position}px)`;
         }

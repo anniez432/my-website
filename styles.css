@@ -163,7 +163,6 @@ ul {
   transition: transform 0.5s ease-in-out;
   will-change: transform;
   width: 60%;
-  position: relative;
 }
 
 .project-card {
@@ -242,19 +241,7 @@ ul {
   height: 4.5vh;
 }
 
-#arrows {
-  position: absolute;
-  top: 10%;
-  width: 100%;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-}
 
-#arrows button {
-  pointer-events: auto;
-}
 
 @media (max-width: 700px){
  #navbar {
