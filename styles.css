@@ -175,6 +175,7 @@ ul {
   max-width: 50%;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project-info{
@@ -231,8 +232,8 @@ ul {
   top: 50%;
   background-color: var(--light-background);
   color: black;
-  border: 0.5vh solid var(--dark-background);
-  border-radius: 8px;
+  border: 0.4vh solid var(--dark-background);
+  border-radius: 6px;
 }
 
 #left-button:hover, #right-button:hover{
