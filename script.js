@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardWidth = projectCards[0].offsetWidth + 10;
     let position = 0;
-    let speed = 0.5;
+    let speed = 0.75;
     let isPaused = false;
     let manualAction = false;
     let resumeTimeout;
@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //projectWrapper.addEventListener("mouseenter", () => isPaused = true);
     //projectWrapper.addEventListener("mouseleave", () => isPaused = false);
-    //projectWrapper.addEventListener("touchstart", () => isPaused = true, {passive: true});
-    //projectWrapper.addEventListener("touchend", () => isPaused = false), {passive: true};
+    projectWrapper.addEventListener("touchstart", () => isPaused = true, {passive: true});
+    projectWrapper.addEventListener("touchend", () => isPaused = false), {passive: true};
 
     continuousScroll();
 
